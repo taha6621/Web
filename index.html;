@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TR Company - Delivering Unmatched Value</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>TR Company</h1>
+      <p class="tagline">Investment company</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Company value</h2>
+      <p>TR company assets.</p>
+      <a href="#value" class="cta-button">Click to see the value of the company</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>The investment company TR company is a pioneer in investing in modern innovations.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h2>Company investments</h2>
+      <div class="service-item">
+        <h3>Digital currency and forex</h3>
+        <p>Investing in currencies and companies with high potential.</p>
+      </div>
+      <div class="service-item">
+        <h3>New innovations</h3>
+        <p>Investing in new and widely used innovations.</p>
+      </div>
+      <div class="service-item">
+        <h3>Real estate and gold</h3>
+        <p>Real estate investment and gold.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Section at the Bottom -->
+  <section id="value" class="value-section">
+    <div class="container">
+      <h2>Assets TR company</h2>
+      <p><strong>1usdt</strong>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 TR Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Click-to-Scroll -->
+  <script>
+    document.addEventListener('click', function (event) {
+      // Check if the click is in the middle 50% of the page height
+      const middleHeight = window.innerHeight / 2;
+      if (event.clientY > middleHeight - 100 && event.clientY < middleHeight + 100) {
+        // Scroll to the value section
+        document.getElementById('value').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
+</body>
+
+</html>
